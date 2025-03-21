@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Ticket Booking</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/assets/favicon.ico">
+    <script src="https://unpkg.com/jwt-decode@3.1.2/build/jwt-decode.js"></script>
 </head>
 <body>
     <header>
@@ -13,6 +14,7 @@
         <div id="auth">
             <span id="user-info" style="display: none;">Welcome, <span id="username"></span> (<a href="#" onclick="logout()">Logout</a>)</span>
             <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
             <button onclick="login()">Login</button>
         </div>
     </header>
@@ -42,12 +44,7 @@
             <h2>Select Your Seats</h2>
             <p id="selected-movie"></p>
             <div id="seats"></div>
-            <button id="proceed-btn">Proceed to Payment</button>
-        </section>
-        <section id="payment" style="display: none;">
-            <h2>Payment</h2>
-            <p>Total: $<span id="total-amount">0</span></p>
-            <button id="pay-btn">Pay Now (Mock)</button>
+            <button id="proceed-btn">Confirm Booking</button> <!-- Changed from "Proceed to Payment" -->
         </section>
         <section id="booking-history" style="display: none;">
             <h2>Your Bookings</h2>

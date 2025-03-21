@@ -54,13 +54,15 @@ h2 {
     align-items: center;
 }
 
+.trailer {
+    margin-top: 10px;
+}
+
 .movie:hover {
     background-color: #ddd;
 }
 
-.trailer {
-    margin-top: 10px;
-}
+
 
 .showtime {
     background-color: #fff;
