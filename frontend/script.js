@@ -90,7 +90,7 @@ function displayMovies(movies) {
     movieDiv.innerHTML = '';
     movies.forEach(movie => {
         console.log('Rendering movie:', movie);
-        let trailerUrl = movie.trailer_url || 'https://www.youtube.com/embed/dQw4w9WgXcQ'; // Fallback
+        let trailerUrl = movie.trailer_url || 'https://www.youtube.com/embed/YoHD9XEInc0?si=k7b7-i1pFLj3CkQZ'; // Fallback
         if (!trailerUrl.startsWith('https://www.youtube.com/embed/')) {
             console.warn(`Invalid trailer URL for ${movie.title}: ${trailerUrl}, using fallback`);
             trailerUrl = 'https://www.youtube.com/embed/dQw4w9WgXcQ';
