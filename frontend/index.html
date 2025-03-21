@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Movie Ticket Booking</h1>
+        <div id="auth">
+            <span id="user-info" style="display: none;">Welcome, <span id="username"></span> (<a href="#" onclick="logout()">Logout</a>)</span>
+            <input type="text" id="login-username" placeholder="Username">
+            <button onclick="login()">Login</button>
+        </div>
+    </header>
+    <main>
+        <section id="filters">
+            <h2>Filter Movies</h2>
+            <select id="genre-filter">
+                <option value="">All Genres</option>
+                <option value="Action">Action</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+            </select>
+            <select id="language-filter">
+                <option value="">All Languages</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </section>
+        <section id="movie-list">
+            <h2>Available Movies</h2>
+            <div id="movies"></div>
+        </section>
+        <section id="showtime-selection" style="display: none;">
+            <h2>Select Showtime</h2>
+            <div id="showtimes"></div>
+        </section>
+        <section id="seat-selection" style="display: none;">
+            <h2>Select Your Seats</h2>
+            <p id="selected-movie"></p>
+            <div id="seats"></div>
+            <button id="proceed-btn">Proceed to Payment</button>
+        </section>
+        <section id="payment" style="display: none;">
+            <h2>Payment</h2>
+            <p>Total: $<span id="total-amount">0</span></p>
+            <button id="pay-btn">Pay Now (Mock)</button>
+        </section>
+        <section id="booking-history" style="display: none;">
+            <h2>Your Bookings</h2>
+            <div id="history"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
