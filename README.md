@@ -1,10 +1,5 @@
-Below is a professional and concise `README.md` file tailored for your Movie Ticket Booking System repository on GitHub. It assumes the project structure and functionality we’ve been working on: a Node.js backend in a `node/` folder, a static frontend in a `frontend/` folder, a MongoDB database, and a `deploy.sh` script for local deployment. The README provides an overview, setup instructions, usage details, and troubleshooting tips, making it easy for others to understand and contribute to your project.
 
----
 
-### `README.md`
-
-```markdown
 # Movie Ticket Booking System
 
 A simple web-based movie ticket booking application built with Node.js, MongoDB, and a static HTML/CSS/JS frontend. Users can browse movies, view showtimes, select seats, and book tickets, mimicking real-world ticketing systems like BookMyShow or AMC Theatres.
@@ -17,7 +12,7 @@ A simple web-based movie ticket booking application built with Node.js, MongoDB,
 - **Deployment**: One-click local deployment with a Bash script.
 
 ## Project Structure
-```
+
 movie-ticket-booking/
 ├── frontend/             # Static frontend files
 │   ├── index.html        # Main page
